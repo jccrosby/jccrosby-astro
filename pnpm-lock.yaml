@@ -1,9 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  astro: ^2.4.1
+  '@astrojs/cloudflare': ^6.2.4
+  astro: ^2.3.3
 
 dependencies:
+  '@astrojs/cloudflare': 6.2.4_astro@2.4.5
   astro: 2.4.5
 
 packages:
@@ -14,6 +16,16 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
+    dev: false
+
+  /@astrojs/cloudflare/6.2.4_astro@2.4.5:
+    resolution: {integrity: sha512-hA8ede9+TQdeg3x8XaPyciYq6yfHAUKqgqjYIvd6vJUMFis97mOCFE5A/J+DGsXs7i7qK2VjZmq05ZBwVdnILw==}
+    peerDependencies:
+      astro: ^2.3.3
+    dependencies:
+      astro: 2.4.5
+      esbuild: 0.17.19
+      tiny-glob: 0.2.9
     dev: false
 
   /@astrojs/compiler/1.4.1:
@@ -1361,6 +1373,14 @@ packages:
   /globals/11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
+    dev: false
+
+  /globalyzer/0.1.0:
+    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
+    dev: false
+
+  /globrex/0.1.2:
+    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: false
 
   /graceful-fs/4.2.11:
@@ -2737,6 +2757,13 @@ packages:
     dependencies:
       '@pkgr/utils': 2.4.0
       tslib: 2.5.0
+    dev: false
+
+  /tiny-glob/0.2.9:
+    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
+    dependencies:
+      globalyzer: 0.1.0
+      globrex: 0.1.2
     dev: false
 
   /titleize/3.0.0:
